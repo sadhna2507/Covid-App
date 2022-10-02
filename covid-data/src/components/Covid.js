@@ -72,7 +72,7 @@ const changeTheme = () => {
         </table>
 
         <div className='changeTheme'>
-                    <button class="btn" onClick={changeTheme}}>Change theme</button>
+                    <button class="btn" onClick={changeTheme}>Change theme</button>
                 </div>
       </div>
     </>
