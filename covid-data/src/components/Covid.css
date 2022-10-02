@@ -11,19 +11,14 @@ body {
 
 .container {
     border: 2px solid black;
-    /* margin-top: 150px; */
-    /* background-color: var(--container-bg-clr); */
-    /* width: 1000px; */
-    /* height: 400px; */
     /* text-align: center; */
 }
 
-/* .container .main-heading {
-    color: var(--main-heading-clr);
+.container .heading {
     margin-bottom: 80px;
     font-weight: bolder;
     box-shadow: 5px 5px 5px black;
-} */
+}
 
 .container .table {
     margin: 0 auto;
@@ -32,65 +27,35 @@ body {
 }
 
 .container .table thead tr th {
-    /* background-color: var(--th-bg-clr); */
+    border: 2px solid black;
     text-align: center;
-    /* color: var(--th-color); */
-    line-height: 1.5;
+    line-height: 1.5 rem;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .container .table tbody .data {
-    background-color: var(--table-data-bg-clr);
+    border: 2px solid black;
     font-weight: bold;
-    font-size: 18px;
-    color: var(--table-data-clr);
+    font-size: 12px;
 }
 
-/* .container .btn {
+.container .btn {
     width: 150px;
     line-height: 1.5;
     border: none;
-    color: white;
     padding: 5px 0;
     font-weight: bold;
-    background-color: var(--btn-bg-clr);
     box-shadow: 3px 3px 3px black;
     margin-top: 30px;
     cursor: pointer;
     font-size: 18px;
-} */
+}
 
-/* .container p {
-    margin-top: 30px;
-    font-weight: bolder;
-    font-size: 18px;
-} */
 
-/* .container .toggleDiv {
+.container .changeTheme {
     display: flex;
     justify-content: space-around;
     align-items: center;
-} */
+}
 
-/* .light-mode {
-    --body-bg-clr: white;
-    --main-heading-clr: #CD5C5C;
-    --container-bg-clr: #dfb4b0;
-    --th-bg-clr: white;
-    --th-color: black;
-    --table-data-bg-clr: #FFE4E1;
-    --table-data-clr: #694c4c;
-    --btn-bg-clr: #CD5C5C;
-} */
-
-/* .dark-mode {
-    --body-bg-clr: black;
-    --main-heading-clr: black;
-    --container-bg-clr: #FFE4E1;
-    --th-bg-clr: black;
-    --th-color: white;
-    --table-data-bg-clr: #694c4c;
-    --table-data-clr: #FFE4E1;
-    --btn-bg-clr: black;
-} */

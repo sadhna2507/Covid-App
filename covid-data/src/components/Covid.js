@@ -65,7 +65,7 @@ export function Covid(){
           </tbody>
         </table>
 
-        <div className='toggleDiv'>
+        <div className='changeTheme'>
                     <button class="btn" onClick={() => toggle()}>Toggle Mode</button>
                 </div>
       </div>
