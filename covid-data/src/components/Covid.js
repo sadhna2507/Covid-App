@@ -4,19 +4,25 @@ import './Covid.css'
 export function Covid(){
 
   const [data, setData] = useState([]);
-    const [theme, setTheme] = useState('dark-mode');
+    
+   
+  const [myTheme, setMyTheme] = useState(
+    {
+        backgroundColor: 'black'
+    })
 
-    useEffect(() => {
-        document.body.className = theme;
-    }, [theme]);
-
-    const toggle = () => {
-        if (theme === "dark-mode") {
-            setTheme('light-mode');
-        } else {
-            setTheme('dark-mode');
-        }
+const changeTheme = () => {
+    if (myTheme.backgroundColor == 'black') {
+        setMyTheme({
+            backgroundColor: 'white'
+        })
+    } else {
+        setMyTheme({
+            backgroundColor: 'black'
+        })
     }
+
+}
 
     const getCovidData = async () => {
             const res = await fetch('https://data.covid19india.org/data.json');
@@ -66,7 +72,7 @@ export function Covid(){
         </table>
 
         <div className='changeTheme'>
-                    <button class="btn" onClick={() => toggle()}>Toggle Mode</button>
+                    <button class="btn" onClick={changeTheme}}>Change theme</button>
                 </div>
       </div>
     </>
