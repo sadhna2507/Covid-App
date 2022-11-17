@@ -12,8 +12,8 @@ export function Covid() {
   const changeTheme = () => {
     if (myTheme.color === "black") {
       setMyTheme({
-        color: "blacl",
-        backgroundColor: "pink",
+        color: "white",
+        backgroundColor: "black",
       });
     } else {
       setMyTheme({
